@@ -1,51 +1,87 @@
+li:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer-pic:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer-body:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer-music:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer-bar:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+.aplayer-bar:hover{
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
+  auto !important;
+}
+#footer-wrap a{
+  color: #00c4b6;
+}
+#footer #footer-wrap {
+  color: rgb(229, 138, 138); /*页尾颜色*/
+  padding: 1rem;
+}
+
 /*é¼ æ ‡æ ·å¼*/
 body,
 html {
   /*cursor: url(https://cdn.jsdelivr.net/gh/zykjofficial/zykjresource@master/img/Arrow.cur),*/
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
     auto !important;
 }
 
 a,
 img {
   /*cursor: url(https://cdn.jsdelivr.net/gh/zykjofficial/zykjresource@master/img/link.cur),*/
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*aæ ‡ç­¾*/
 a:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*æŒ‰é’®*/
 button:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*iæ ‡ç­¾*/
 i:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*é¡µè„šaæ ‡ç­¾*/
 #footer-wrap a:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*åˆ†é¡µå™¨*/
 #pagination .page-number:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 
 /*å¤´éƒ¨çš„å¯¼èˆªæ */
 #nav .site-page:hover {
-  cursor: url('/images/140.cur'),
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png),
     auto !important;
 }
 /*é¼ æ ‡æ ·å¼END*/
