@@ -1,4 +1,17 @@
-li:hover{
+
+#page-header #site-subtitle {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#page-header #site-title {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+i:hover{
   cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png),
   auto !important;
 }
