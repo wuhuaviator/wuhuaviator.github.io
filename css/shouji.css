@@ -1,28 +1,13 @@
 /*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
 
-@media screen and (max-width: 900px) {
-    .card-recent-post div {
-      display: none;
-      font-size: 13px;
-    }
-    .card-info div {
-      display: none;
-      font-size: 13px;
-    }
-    .card-announcement div {
-      display: none;
-      font-size: 13px;
-    }
-    .card-archives div {
-      display: none;
-      font-size: 13px;
-    }
-    .card-categories div {
-      display: none;
-      font-size: 13px;
-    }
-    .card-tags div {
-      display: none;
-      font-size: 13px;
-    }
+@media screen and (max-width: 800px) {
+  .card-recent-post,
+  .card-info,
+  .card-announcement,
+  .card-archives,
+  .card-categories,
+  .card-tags,
+  .item-headline {
+    display: none;
   }
+}
