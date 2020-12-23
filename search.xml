@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>[实验室每日一题][20201124][Zip已知明文攻击]</title>
+      <link href="2020/12/23/20201124/"/>
+      <url>2020/12/23/20201124/</url>
+      
+        <content type="html"><![CDATA[<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><p>下载文件后，查看题目和题目描述。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201223174330.png"></p><p>发现题目中的文本为504b开头，猜测是zip文件，放入010editor中保存为zip文件，后再kali用binwalk和foremost分离，查看binwalk和foremost分离的结果。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201223174727.png"></p><p>左图为binwalk分离的结果，右图为foremost分离的结果。发现foremost分离效果更好，得到了一张压缩包和一个图片。分离出来的压缩包中有两个图片，1.jpg和2.jpg，分离出的jpg文件中有一个名为1.jpg的图片，于是想到使用明文攻击。使用好压把jpg压缩为zip格式的文件（因为出题人用的是好压进行文件压缩）。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201223180607.png"></p><p>明文攻击后得到解压密码，打开压缩包，得到flag。</p><h2 id="题目总结"><a href="#题目总结" class="headerlink" title="题目总结"></a>题目总结</h2><p>这道题挺典型的，主要考了文件分离，本人习惯手动分离，但是效果并不理想，小白和新手的话建议用foremost和binwalk分离，最后考了明文攻击，总的来说是一道不错的入门题。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实验室日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ctf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>[实验室每日一题][20201206][cryptograpy]</title>
       <link href="2020/12/07/20201206/"/>
       <url>2020/12/07/20201206/</url>
