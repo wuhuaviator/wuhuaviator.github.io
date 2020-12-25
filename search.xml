@@ -79,6 +79,31 @@
     
     
     <entry>
+      <title>[实验室每日一题][20201127][misc]马老师与老八</title>
+      <link href="2020/12/03/20201127/"/>
+      <url>2020/12/03/20201127/</url>
+      
+        <content type="html"><![CDATA[<h2 id="解题过程"><a href="#解题过程" class="headerlink" title="解题过程"></a>解题过程</h2><p>题目第一个压缩包的思路似乎有点问题，出题人直接给了压缩包密码：<code>E1Q+zs7eWNSB/C25ocZESDARrmtBxavcOJFaBfNZowU=</code>。打开压缩包后看一张图片和一个压缩包，图片名为：<code>Bacon</code>，于是想到培根密码，查看图片底层，看到<code>abbaaaaaaaababbaaaaaabbbabaabaaabbbabaaaaaabaaaaaaabaaabaabaaabbbabaaaaaabbaaaaabaabaaabbbabaaa</code>，密码长度为95，确定是培根密码。解密得到<code>malaoshicaishidashi</code>，培根解密小写即为压缩包密码。打开压缩包看到两个文件夹，第一个文件夹中有一个名为<code>hhh</code>的文件，放入kali中无法识别此文件，看底层也看不出东西。于是先放着查看另外一个文件，里面有个gif文件，查看底层并没有发现什么特别。于是放入kali中，用binwalk查看，发现有两个gif文件。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201225223907.png"></p><p>于是在010中搜索<code>47494638</code>，因为GIF的文件头为<code>47494638</code>，后发现有两个gif头，也应正了binwalk的结果。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201225224854.png"></p><p>然后对文件进行手动分离。分离出另外一张gif，用Stegsolve逐帧把图片取出，然后用ppt把图片旋转过来，拼成一个flag。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201225230325.png"></p><p>这其实是一个假的flag，翻译flag中的英文，意思是恢复颠倒的磁盘。根据提示，用逆置脚本把hhh的16进制文件逆置，后放入kali识别文件，发现应该是一个损坏的liunx文件（我搞不太清楚该怎么描述，但是见过类似题目）。</p><p><img src="https://cdn.jsdelivr.net/gh/wuhuaviator/img@main/20201225231032.png"></p><p>于是用<code>extundelete</code>进行修复，命令为:<code>extundelete 文件 --restore-all</code>恢复后的文件直接运行，会显示<code>flag: 权限不够</code>，使用命令<code>chmod +x 文件</code> 给予文件可执行权限，然后再次运行文件，则可执行成功得到flag。或者切换成普通用户执行文件，也可以成功得到flag。</p><h2 id="题目总结"><a href="#题目总结" class="headerlink" title="题目总结"></a>题目总结</h2><p>总的来说这道题是一道不错的题目，综合攻防世界的几个考点，但我在实验室与队友交流的过程中，发现有个误区，他们中有人觉得<code>chmod +x</code>这条命令是给root用户加权限，但<code>chomod +X</code>真正的意思是<strong>给予可执行权限</strong>。最后放上两个我觉得讲得不错的相关链接。</p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><strong>linux下chmod +x的意思？为什么要进行chmod +x：</strong><a href="https://blog.csdn.net/u012106306/article/details/80436911">https://blog.csdn.net/u012106306/article/details/80436911</a></p><p><strong>chmod命令详细用法：</strong><a href="https://blog.csdn.net/weixin_43190941/article/details/83281132">https://blog.csdn.net/weixin_43190941/article/details/83281132</a><br><strong>extundelete应用实战：</strong><a href="https://blog.csdn.net/swartz_lubel/article/details/77828648">https://blog.csdn.net/swartz_lubel/article/details/77828648</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实验室日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ctf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ctfshow web入门（信息收集1-20）</title>
       <link href="2020/11/27/ctfshow/"/>
       <url>2020/11/27/ctfshow/</url>
